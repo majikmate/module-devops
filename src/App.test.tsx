@@ -1,6 +1,7 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import App from "./App";
+import type { Article } from "./services/articleApi.ts";
 
 vi.mock("./services/articleApi.ts", () => ({
     fetchArticles: vi.fn(),
@@ -8,39 +9,39 @@ vi.mock("./services/articleApi.ts", () => ({
 
 import { fetchArticles } from "./services/articleApi.ts";
 
-const mockArticles = [
+const mockArticles: Article[] = [
     {
-        id: "1",
+        id: 1,
         title: "Story 1",
         text: "Text 1",
         image: "https://picsum.photos/seed/1/300/300",
     },
     {
-        id: "2",
+        id: 2,
         title: "Story 2",
         text: "Text 2",
         image: "https://picsum.photos/seed/2/300/300",
     },
     {
-        id: "3",
+        id: 3,
         title: "Story 3",
         text: "Text 3",
         image: "https://picsum.photos/seed/3/300/300",
     },
     {
-        id: "4",
+        id: 4,
         title: "Story 4",
         text: "Text 4",
         image: "https://picsum.photos/seed/4/300/300",
     },
     {
-        id: "5",
+        id: 5,
         title: "Story 5",
         text: "Text 5",
         image: "https://picsum.photos/seed/5/300/300",
     },
     {
-        id: "6",
+        id: 6,
         title: "Story 6",
         text: "Text 6",
         image: "https://picsum.photos/seed/6/300/300",
