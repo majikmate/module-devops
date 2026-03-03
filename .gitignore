@@ -25,3 +25,9 @@ blob-report
 *.njsproj
 *.sln
 *.sw?
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
