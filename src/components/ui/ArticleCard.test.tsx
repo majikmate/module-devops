@@ -10,7 +10,7 @@ describe("ArticleCard", () => {
         expect(container).not.toBeNull();
         expect(container).toHaveAttribute(
             "class",
-            "p-4 rounded-2xl shadow-lg bg-white",
+            "rounded-2xl bg-white p-4 shadow-lg",
         );
     });
 

@@ -72,8 +72,9 @@ describe("App", () => {
             expect(screen.getAllByRole("heading")).toHaveLength(6);
         });
         for (const article of mockArticles) {
-            expect(screen.getByRole("heading", { name: article.title }))
-                .toBeInTheDocument();
+            expect(
+                screen.getByRole("heading", { name: article.title }),
+            ).toBeInTheDocument();
         }
     });
 

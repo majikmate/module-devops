@@ -6,7 +6,7 @@ type Props = {
 
 export default function ArticleCard({ title, text, image }: Props) {
     return (
-        <div className="p-4 rounded-2xl shadow-lg bg-white">
+        <div className="rounded-2xl bg-white p-4 shadow-lg">
             <h2 className="text-xl font-bold">{title}</h2>
             <p>{text}</p>
             {image && <img src={image} alt={title} />}

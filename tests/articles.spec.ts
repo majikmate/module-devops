@@ -41,7 +41,9 @@ test.describe("Article feed", () => {
         }
     });
 
-    test("article images have alt text matching their title", async ({ page }) => {
+    test("article images have alt text matching their title", async ({
+        page,
+    }) => {
         const cards = page.locator(".rounded-2xl");
         for (let i = 0; i < 6; i++) {
             const card = cards.nth(i);
