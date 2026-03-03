@@ -15,7 +15,7 @@ function App() {
                 {articles.map(
                     (article) => (
                         <ArticleCard
-                            key={article.title}
+                            key={article.id}
                             title={article.title}
                             text={article.text}
                             image={article.image}
